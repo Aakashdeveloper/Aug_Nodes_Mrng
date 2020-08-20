@@ -1,0 +1,18 @@
+###Window###
+>>> after installing monogdb 
+>>> in C: drive create folder by name of data/db
+
+> c:\program file\mongodb\3.4\bin
+
+open 2 cmd with above location
+
+in first cmd > mongod   (this will start mongo server)
+in second cmd> mongo    (this will start mongo console)
+
+
+###Mac###
+>open terminal>  mongod   (this will start mongo server)
+>open terminal>  mongo    (this will start mongo console)
+
+port 27017
+

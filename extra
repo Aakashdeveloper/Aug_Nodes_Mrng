@@ -1,0 +1,217 @@
+https://code.visualstudio.com/
+https://nodejs.org/en/
+https://github.com/
+https://www.mongodb.com/
+(Setup locally /over cloud)
+https://dashboard.heroku.com/
+https://redis.io/download
+https://docs.docker.com/docker-for-windows/install/
+
+Basic JavaScript
+NPM
+Basic NodeJS(in built)(Os,file,http)
+NodeJS(full Stack App) (Node-EJS-Mongo-Express)
+Third Party Api (Weather Api)
+Redis
+Node-Es6(.babel)
+/////////////////////////////////
+Email With Node(Sendgrid)
+Github
+MongoDb Basic
+Api with NodeJS(Rest)
+DashBoard(Crud)
+Oauth(with github)
+Login/Logout(JWT)
+OO_NodeJs
+Testing
+NodeJs with postgres
+Pm2
+Heroku
+GraphQl API
+ChatApp
+Production 
+Docker
+Nginx
+
+-------------------------------------------
+Single Threaded Async Non Blocking I/O
+CallBack
+Event Loop Base structure
+
+
+----------------------------
+NPM > Node package manager
+>>>>><<<<<<<<<<<<<<<
+packages
+dependency
+node_modules
+
+localdependency 
+> its is local to the folder
+> use inside same folder
+
+& globaldependency
+>>>>>>>>>>>>>>>>>>>>>>>JSON<<<<<<<<<<<<<<
+JavaScript Object Notation
+[
+    {
+        name:"john",
+        class:"ui"
+    },
+    {
+       name:"Alvin",
+       class:"node"  
+    }
+]
+
+>>>>>>>>>>>>>>>>>>>>>>Package.json<<<<<<<<<<<<<<<<<<<
+> Metadata
+> all package
+> command
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Step to create package.json
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+***NodeJs must be install in the system 
+
+1> Open the cmd
+2> go inside the folder
+3> npm init    
+4> Answer all questions
+5> type yes
+
+>>>>>>>>>>>>>Step to install npm package<<<<<<<<<<<<<<<<<
+*NodeJs must be install in the system
+
+1> Open the cmd
+2> go inside the folder
+3> npm i packagename/ npm install packagename
+
+
+>>>>>>>>>>
+npm i
+node inbuilt
+
+
+
+//////globaldependency///////
+> install in system not in any folder
+> we need admin access to install
+> we only install to create or run the application
+> very limited package will install globaly 
+
+
+#windows
+> open cmd as admin
+> npm i -g nodemon
+
+#mac/linux
+> open terminal
+> sudo npm i -g nodemon
+
+cors
+cross origin resource
+>>>>>><<<<<<<<<
+npm i cors
+npm i morgan chalk 
+
+////////
+
+rollNo | Hindi | English | computer
+1      | 80    |         |
+2      |       | 80      |
+3      | 80    |         | 80
+
+[
+    {
+        rollNo:1,
+        hindi:80
+    },
+    {
+        rollNo:2,
+        english:80
+    },
+    {
+        rollNo:1,
+        computer:80,
+        hindi:80
+    }
+]
+
+
+//////////////////////////////////////////////
+SQL                 |  No SQL
+Database                Database
+table                   collections
+row                     document
+Select                  find
+insert                  insert
+
+https://www.mongodb.com/try/download/community
+
+create > C:\data\db
+
+mongodbServer> cd C:\Program Files\MongoDB\Server\3.4\bin > mongod
+mongodbClinet> cd C:\Program Files\MongoDB\Server\3.4\bin > mongo
+
+https://www.mongodb.com/products/compass
+
+default
+Mongo (27017)
+Redis  6379
+Mysql 3306
+
+
+////////
+show Databases
+
+>>>Use any db
+#use dbname
+
+>>>>See collections
+#show collections
+
+>>>>>Select query
+#db.users.find({})
+#db.users.find({}).pretty()
+#db.users.find({name:'john'})
+
+>projection
+db.users.find({name:"Alvin"},{name:1,email:1,_id:0})
+
+db.users.find({},{name:1,email:1,_id:0})
+
+_id> object id(primary key)
+
+
+>>>>>>>><<<<<<<<<<<<<<<<<
+use dbname  >>> create the db
+db.city.insert({_id:1, name:'Delhi',country:'India'})
+db.city.insert({_id:2,name:'London',country:'UK'})
+db.city.insert({_id:2,name:'Helsinki',country:'Finland'})
+
+
+
+db.city.insertMany([
+    {_id:4, name:'Mumbai',country:'India'},
+    {_id:5, name:'Paris',country:'France'},
+    {_id:6, name:'Amsterdam',country:'Netherland'}
+])
+
+npm init -y
+npm i request express ejs
+
+babel
+
+npm i @babel/core @babel/preset-env @babel/register
+
+
+////
+Redis
+//////
+redis-Server
+redis-cli
+keys *
+set key value
+get key
+
+npm i axios express redis
