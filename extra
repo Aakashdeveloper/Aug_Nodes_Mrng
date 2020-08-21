@@ -14,9 +14,9 @@ NodeJS(full Stack App) (Node-EJS-Mongo-Express)
 Third Party Api (Weather Api)
 Redis
 Node-Es6(.babel)
-/////////////////////////////////
 Email With Node(Sendgrid)
 Github
+/////////////////////////////////
 MongoDb Basic
 Api with NodeJS(Rest)
 DashBoard(Crud)
@@ -215,3 +215,17 @@ set key value
 get key
 
 npm i axios express redis
+
+//first time
+git init
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/Aakashdeveloper/testAugust.git
+git push -u origin master
+
+//next time
+git add .
+git commit -m "first commit"
+git push
+
+git checkout -b  mybranch

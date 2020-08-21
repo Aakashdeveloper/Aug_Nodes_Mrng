@@ -1,6 +1,6 @@
 var express = require('express');
 var app = express();
-var port = 9800;
+var port = process.env.PORT||9800;
 
 app.get('/',function(req,res){
     res.send('Hii From express')
