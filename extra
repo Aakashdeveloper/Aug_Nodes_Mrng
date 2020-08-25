@@ -16,15 +16,15 @@ Redis
 Node-Es6(.babel)
 Email With Node(Sendgrid)
 Github
-/////////////////////////////////
 MongoDb Basic
 Api with NodeJS(Rest)
 DashBoard(Crud)
+/////////////////////////////////
+OO_NodeJs
+NodeJs with postgres
 Oauth(with github)
 Login/Logout(JWT)
-OO_NodeJs
 Testing
-NodeJs with postgres
 Pm2
 Heroku
 GraphQl API
@@ -192,10 +192,28 @@ db.city.insert({_id:2,name:'Helsinki',country:'Finland'})
 
 
 db.city.insertMany([
+    {_id:1, name:'Delhi',country:'India'},
+    {_id:2,name:'London',country:'UK'},
+    {_id:3,name:'NewYork',country:'UK'},
     {_id:4, name:'Mumbai',country:'India'},
     {_id:5, name:'Paris',country:'France'},
     {_id:6, name:'Amsterdam',country:'Netherland'}
 ])
+
+
+/////update//////
+db.city.update({_id:2},{
+    $set:{
+        country:'United Kingdom',
+
+    }
+});
+
+/////Delete
+db.city.remove({})
+db.city.remove({_id:4})
+
+drop dbname
 
 npm init -y
 npm i request express ejs
@@ -229,3 +247,6 @@ git commit -m "first commit"
 git push
 
 git checkout -b  mybranch
+
+
+npm i body-parser cors express ejs mongodb chai chai-http mocha morgan
