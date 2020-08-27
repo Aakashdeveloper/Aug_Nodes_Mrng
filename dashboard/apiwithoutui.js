@@ -71,6 +71,7 @@ app.put('/updateUser',(req,res) => {
 })
 
 
+
 //Delete User
 app.delete('/deleteUser',(req,res) => {
     db.collection('users').remove({_id:parseInt(req.body.id)},(err,result) => {

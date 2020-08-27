@@ -61,3 +61,13 @@ GET /new 200 2273 - 8.933 ms
 POST /addUser 302 46 - 83.644 ms
 GET / 200 11505 - 17.682 ms
 GET /users?id=7155 200 72 - 6.198 ms
+GET / 200 11505 - 177.065 ms
+GET /health 200 11 - 2.888 ms
+POST /addUser 302 23 - 178.523 ms
+GET / 200 12241 - 14.161 ms
+GET / 200 12241 - 84.970 ms
+GET /health 200 11 - 3.633 ms
+GET / 200 12241 - 92.530 ms
+GET /health 200 11 - 3.255 ms
+POST /addUser 302 23 - 152.886 ms
+GET / 200 12985 - 12.724 ms
