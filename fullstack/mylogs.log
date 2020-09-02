@@ -424,3 +424,10 @@ GET /css/styles.css 304 - - 0.464 ms
 GET /js/bootstrap.min.js 304 - - 1.913 ms
 GET /fonts/glyphicons-halflings-regular.woff 404 178 - 4.578 ms
 GET /fonts/glyphicons-halflings-regular.ttf 404 177 - 0.604 ms
+GET / 200 9305 - 69.932 ms
+GET /css/bootstrap.min.css 200 109518 - 16.366 ms
+GET /css/styles.css 200 2512 - 3.441 ms
+GET /js/bootstrap.min.js 200 31819 - 17.644 ms
+GET /fonts/glyphicons-halflings-regular.woff 404 178 - 8.205 ms
+GET /fonts/glyphicons-halflings-regular.ttf 404 177 - 2.894 ms
+GET /favicon.ico 404 150 - 4.170 ms

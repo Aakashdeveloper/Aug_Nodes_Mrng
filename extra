@@ -23,10 +23,10 @@ OO_NodeJs
 Production 
  >Heroku
 Testing
-/////////////////////////////////
-NodeJs with postgres
 Oauth(with github)
-Login/Logout(JWT)
+/////////////////////////////////
+Login with JWT
+NodeJs with postgres
 Pm2
 GraphQl API
 ChatApp
@@ -250,3 +250,6 @@ git checkout -b  mybranch
 
 
 npm i body-parser cors express ejs mongodb chai chai-http mocha morgan
+
+/////////////////////////
+npm i bcryptjs body-parser cors express jsonwebtoken mongoose
