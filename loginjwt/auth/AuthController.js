@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const bodyParser = require('body-parser');
 const jwt = require('jsonwebtoken');
-const bcrpyt = require('bcryptjs');
+const bcrypt = require('bcryptjs');
 const config = require('../config');
 const User = require('./UserSchema');
 
@@ -32,7 +32,7 @@ router.post('/login',(req,res) => {
         if(err) return res.status(500).send("Error on server")
         if(!user) return res.status(404).send('No User found');
         else{
-            const passIsValid = bcrpyt.compareSync(req.body.password,user.password)
+            const passIsValid = bcrypt.compareSync(req.body.password,user.password)
             if(!passIsValid) return res.status(401).send({auth:false,token:null});
             var token = jwt.sign({id:user._id},config.secert,{expiresIn:86400});
             res.send({auth:true,token:token})

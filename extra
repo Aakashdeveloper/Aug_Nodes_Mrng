@@ -24,11 +24,12 @@ Production
  >Heroku
 Testing
 Oauth(with github)
-/////////////////////////////////
 Login with JWT
-NodeJs with postgres
 Pm2
+/////////////////////////////////
 GraphQl API
+
+NodeJs with postgres
 ChatApp
 Docker
 Nginx
@@ -253,3 +254,13 @@ npm i body-parser cors express ejs mongodb chai chai-http mocha morgan
 
 /////////////////////////
 npm i bcryptjs body-parser cors express jsonwebtoken mongoose
+
+npm i -g Pm2
+
+> pm2 start app.js
+> pm2 list
+> pm2 stop app.js 
+
+
+///////////////////////////////////
+npm i axios cors express express-graphql graphql lodash
