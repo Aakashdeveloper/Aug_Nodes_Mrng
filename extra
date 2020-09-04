@@ -26,13 +26,13 @@ Testing
 Oauth(with github)
 Login with JWT
 Pm2
-/////////////////////////////////
 GraphQl API
-
 NodeJs with postgres
-ChatApp
 Docker
 Nginx
+ChatApp
+
+
 
 -------------------------------------------
 Single Threaded Async Non Blocking I/O
@@ -264,3 +264,49 @@ npm i -g Pm2
 
 ///////////////////////////////////
 npm i axios cors express express-graphql graphql lodash
+
+/////graphql 
+query
+
+{
+  product(id:4){
+    name,
+    delivery
+  }
+}
+
+mutation
+
+
+mutation{
+  addProduct(
+    id:878,
+    name:"test"
+  ){
+    id
+  }
+}
+
+///////////////////////
+npm i -g json-server
+json-server --watch db.json --port 8900
+
+docker build . -t imagename
+docker run -p 8900:9898 imagename
+
+nginx.conf
+
+server {
+        listen       8082;
+        server_name  localhost;
+        ssl_cert:'cert.pem',
+        ssl_key:'cert.key'
+        location / {
+	    proxy_pass http://127.0.0.1:8900;
+	    proxy_http_version 1.1;
+    	    proxy_set_header Upgrade $http_upgrade;
+            proxy_set_header Connection 'upgrade';
+            proxy_set_header Host $host;
+            proxy_cache_bypass $http_upgrade;
+        }
+    }
